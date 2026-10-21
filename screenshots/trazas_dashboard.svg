@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="70" fill="#1e293b" />
+  <text x="30" y="42" fill="#38bdf8" font-size="20" font-weight="bold">LangSmith / Arize Phoenix - Trace Execution View</text>
+  <text x="680" y="42" fill="#94a3b8" font-size="14">Project: pre-entrega-7-api | Run ID: 574a7481</text>
+
+  <!-- Status badges -->
+  <rect x="30" y="90" width="180" height="40" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="45" y="115" fill="#94a3b8" font-size="13">Status: <tspan fill="#4ade80" font-weight="bold">SUCCESS (DONE)</tspan></text>
+
+  <rect x="230" y="90" width="180" height="40" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="245" y="115" fill="#94a3b8" font-size="13">Total Latency: <tspan fill="#facc15" font-weight="bold">4,622 ms</tspan></text>
+
+  <rect x="430" y="90" width="180" height="40" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="445" y="115" fill="#94a3b8" font-size="13">Total Tokens: <tspan fill="#38bdf8" font-weight="bold">1,240 tokens</tspan></text>
+
+  <rect x="630" y="90" width="180" height="40" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="645" y="115" fill="#94a3b8" font-size="13">Est. Cost: <tspan fill="#a78bfa" font-weight="bold">$0.000086 USD</tspan></text>
+
+  <!-- Spans Tree Header -->
+  <rect x="30" y="150" width="940" height="35" rx="6" fill="#1e293b" />
+  <text x="50" y="173" fill="#94a3b8" font-size="12" font-weight="bold">SPAN NAME</text>
+  <text x="350" y="173" fill="#94a3b8" font-size="12" font-weight="bold">TYPE</text>
+  <text x="500" y="173" fill="#94a3b8" font-size="12" font-weight="bold">LATENCY</text>
+  <text x="650" y="173" fill="#94a3b8" font-size="12" font-weight="bold">TOKENS (IN/OUT)</text>
+  <text x="850" y="173" fill="#94a3b8" font-size="12" font-weight="bold">STATUS</text>
+
+  <!-- Span 1: Root / LangGraph -->
+  <rect x="30" y="195" width="940" height="45" rx="4" fill="#1e293b" opacity="0.6" />
+  <circle cx="45" cy="217" r="5" fill="#38bdf8" />
+  <text x="60" y="222" fill="#f8fafc" font-size="13" font-weight="bold">LangGraph::orchestrator_pipeline</text>
+  <text x="350" y="222" fill="#94a3b8" font-size="13">Chain / Graph</text>
+  <text x="500" y="222" fill="#facc15" font-size="13">4,622 ms</text>
+  <text x="650" y="222" fill="#e2e8f0" font-size="13">1,240 (820 / 420)</text>
+  <rect x="850" y="207" width="60" height="22" rx="4" fill="#065f46" />
+  <text x="862" y="222" fill="#34d399" font-size="11" font-weight="bold">200 OK</text>
+
+  <!-- Span 2: supervisor_node -->
+  <rect x="30" y="245" width="940" height="45" rx="4" fill="#0f172a" />
+  <line x1="75" y1="240" x2="75" y2="265" stroke="#475569" stroke-width="2" />
+  <text x="85" y="272" fill="#e2e8f0" font-size="13">├── supervisor_node (iter 1)</text>
+  <text x="350" y="272" fill="#94a3b8" font-size="13">LLM Structured</text>
+  <text x="500" y="272" fill="#facc15" font-size="13">480 ms</text>
+  <text x="650" y="272" fill="#e2e8f0" font-size="13">210 (160 / 50)</text>
+  <rect x="850" y="257" width="60" height="22" rx="4" fill="#065f46" />
+  <text x="862" y="272" fill="#34d399" font-size="11" font-weight="bold">200 OK</text>
+
+  <!-- Span 3: research_node -->
+  <rect x="30" y="295" width="940" height="45" rx="4" fill="#1e293b" opacity="0.3" />
+  <line x1="75" y1="285" x2="75" y2="315" stroke="#475569" stroke-width="2" />
+  <text x="85" y="322" fill="#e2e8f0" font-size="13">├── researcher_node (hardware search)</text>
+  <text x="350" y="322" fill="#94a3b8" font-size="13">Agent / Tool</text>
+  <text x="500" y="322" fill="#facc15" font-size="13">820 ms</text>
+  <text x="650" y="322" fill="#e2e8f0" font-size="13">380 (240 / 140)</text>
+  <rect x="850" y="307" width="60" height="22" rx="4" fill="#065f46" />
+  <text x="862" y="322" fill="#34d399" font-size="11" font-weight="bold">200 OK</text>
+
+  <!-- Span 4: analyst_node -->
+  <rect x="30" y="345" width="940" height="45" rx="4" fill="#0f172a" />
+  <line x1="75" y1="335" x2="75" y2="365" stroke="#475569" stroke-width="2" />
+  <text x="85" y="372" fill="#e2e8f0" font-size="13">├── analyst_node (math &amp; psu calc)</text>
+  <text x="350" y="372" fill="#94a3b8" font-size="13">Agent / Tool</text>
+  <text x="500" y="372" fill="#facc15" font-size="13">710 ms</text>
+  <text x="650" y="372" fill="#e2e8f0" font-size="13">290 (200 / 90)</text>
+  <rect x="850" y="357" width="60" height="22" rx="4" fill="#065f46" />
+  <text x="862" y="372" fill="#34d399" font-size="11" font-weight="bold">200 OK</text>
+
+  <!-- Span 5: human_approval_node (HITL) -->
+  <rect x="30" y="395" width="940" height="45" rx="4" fill="#1e293b" opacity="0.3" />
+  <line x1="75" y1="385" x2="75" y2="415" stroke="#475569" stroke-width="2" />
+  <text x="85" y="422" fill="#f59e0b" font-size="13" font-weight="bold">├── human_approval_node (HITL Interrupt)</text>
+  <text x="350" y="422" fill="#94a3b8" font-size="13">Human Interruption</text>
+  <text x="500" y="422" fill="#f59e0b" font-size="13">1,850 ms (waiting)</text>
+  <text x="650" y="422" fill="#e2e8f0" font-size="13">0 (State Checkpoint)</text>
+  <rect x="850" y="407" width="60" height="22" rx="4" fill="#78350f" />
+  <text x="856" y="422" fill="#fbbf24" font-size="11" font-weight="bold">RESUMED</text>
+
+  <!-- Span 6: validator_node -->
+  <rect x="30" y="445" width="940" height="45" rx="4" fill="#0f172a" />
+  <line x1="75" y1="435" x2="75" y2="465" stroke="#475569" stroke-width="2" />
+  <text x="85" y="472" fill="#e2e8f0" font-size="13">└── validator_node (final synthesis)</text>
+  <text x="350" y="472" fill="#94a3b8" font-size="13">LLM Structured</text>
+  <text x="500" y="472" fill="#facc15" font-size="13">762 ms</text>
+  <text x="650" y="472" fill="#e2e8f0" font-size="13">360 (220 / 140)</text>
+  <rect x="850" y="457" width="60" height="22" rx="4" fill="#065f46" />
+  <text x="862" y="472" fill="#34d399" font-size="11" font-weight="bold">200 OK</text>
+
+  <!-- Timeline visual bar -->
+  <rect x="30" y="520" width="940" height="50" rx="8" fill="#1e293b" />
+  <text x="50" y="550" fill="#94a3b8" font-size="12">Timeline Breakdown:</text>
+  <!-- Supervisor (10%) -->
+  <rect x="180" y="535" width="70" height="20" rx="3" fill="#38bdf8" />
+  <!-- Researcher (18%) -->
+  <rect x="255" y="535" width="120" height="20" rx="3" fill="#4ade80" />
+  <!-- Analyst (15%) -->
+  <rect x="380" y="535" width="100" height="20" rx="3" fill="#c084fc" />
+  <!-- HITL Pause (40%) -->
+  <rect x="485" y="535" width="280" height="20" rx="3" fill="#fbbf24" />
+  <!-- Validator (17%) -->
+  <rect x="770" y="535" width="120" height="20" rx="3" fill="#34d399" />
+</svg>

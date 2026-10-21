@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" width="1000" height="550" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="70" fill="#1e293b" />
+  <text x="30" y="42" fill="#38bdf8" font-size="20" font-weight="bold">Arize Phoenix / LangSmith - Métricas de Latencia (5 Peticiones Concurrentes)</text>
+  <text x="730" y="42" fill="#94a3b8" font-size="14">Benchmark de Carga Concurrente</text>
+
+  <!-- Metric Summary Cards -->
+  <rect x="30" y="95" width="215" height="85" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="45" y="125" fill="#94a3b8" font-size="13">Latencia Mínima</text>
+  <text x="45" y="160" fill="#4ade80" font-size="26" font-weight="bold">4,106.42 ms</text>
+
+  <rect x="270" y="95" width="215" height="85" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="285" y="125" fill="#94a3b8" font-size="13">Latencia Mediana (P50)</text>
+  <text x="285" y="160" fill="#38bdf8" font-size="26" font-weight="bold">4,107.41 ms</text>
+
+  <rect x="510" y="95" width="215" height="85" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+  <text x="525" y="125" fill="#f59e0b" font-size="13" font-weight="bold">Latencia P95 (Crítica)</text>
+  <text x="525" y="160" fill="#fbbf24" font-size="26" font-weight="bold">5,137.45 ms</text>
+
+  <rect x="750" y="95" width="220" height="85" rx="8" fill="#1e293b" stroke="#334155" />
+  <text x="765" y="125" fill="#94a3b8" font-size="13">Latencia Máxima</text>
+  <text x="765" y="160" fill="#f87171" font-size="26" font-weight="bold">6,144.08 ms</text>
+
+  <!-- Bar Chart Container -->
+  <rect x="30" y="210" width="940" height="300" rx="10" fill="#1e293b" stroke="#334155" />
+  <text x="50" y="240" fill="#f8fafc" font-size="15" font-weight="bold">Distribución de Latencias por Tarea Concurrente</text>
+
+  <!-- Y-Axis Lines -->
+  <line x1="100" y1="270" x2="930" y2="270" stroke="#334155" stroke-dasharray="4" />
+  <text x="60" y="275" fill="#64748b" font-size="11">6,000 ms</text>
+
+  <line x1="100" y1="330" x2="930" y2="330" stroke="#334155" stroke-dasharray="4" />
+  <text x="60" y="335" fill="#64748b" font-size="11">4,000 ms</text>
+
+  <line x1="100" y1="390" x2="930" y2="390" stroke="#334155" stroke-dasharray="4" />
+  <text x="60" y="395" fill="#64748b" font-size="11">2,000 ms</text>
+
+  <line x1="100" y1="450" x2="930" y2="450" stroke="#475569" />
+  <text x="75" y="455" fill="#64748b" font-size="11">0 ms</text>
+
+  <!-- Bars -->
+  <!-- Req 1: 6144 ms -->
+  <rect x="150" y="265" width="85" height="185" rx="4" fill="#38bdf8" />
+  <text x="162" y="255" fill="#38bdf8" font-size="12" font-weight="bold">6,144 ms</text>
+  <text x="165" y="475" fill="#94a3b8" font-size="12">Req #1</text>
+
+  <!-- Req 2: 4107 ms -->
+  <rect x="310" y="326" width="85" height="124" rx="4" fill="#38bdf8" />
+  <text x="322" y="316" fill="#38bdf8" font-size="12" font-weight="bold">4,107 ms</text>
+  <text x="325" y="475" fill="#94a3b8" font-size="12">Req #2 (P50)</text>
+
+  <!-- Req 3: 5137 ms (P95) -->
+  <rect x="470" y="295" width="85" height="155" rx="4" fill="#f59e0b" />
+  <text x="482" y="285" fill="#fbbf24" font-size="12" font-weight="bold">5,137 ms</text>
+  <text x="485" y="475" fill="#fbbf24" font-size="12" font-weight="bold">Req #3 (P95)</text>
+
+  <!-- Req 4: 4106 ms -->
+  <rect x="630" y="326" width="85" height="124" rx="4" fill="#38bdf8" />
+  <text x="642" y="316" fill="#38bdf8" font-size="12" font-weight="bold">4,106 ms</text>
+  <text x="645" y="475" fill="#94a3b8" font-size="12">Req #4 (Min)</text>
+
+  <!-- Req 5: 4622 ms -->
+  <rect x="790" y="311" width="85" height="139" rx="4" fill="#38bdf8" />
+  <text x="802" y="301" fill="#38bdf8" font-size="12" font-weight="bold">4,622 ms</text>
+  <text x="805" y="475" fill="#94a3b8" font-size="12">Req #5 (HITL)</text>
+</svg>
